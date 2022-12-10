@@ -1,0 +1,19 @@
+package com.springBootTutor.ControllerPackk;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+//@Controller
+//public class HelloController 
+//{
+//	@RequestMapping("/home")
+//	public String home()
+//	{
+//		return "home.html";
+//	}
+//	@RequestMapping("/index")
+//	public String indexx()
+//	{
+//		return "path.html";
+//	}
+//}

@@ -1,0 +1,24 @@
+package com.springBootTutor.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+	
+	@GetMapping("/home")
+	public String home()
+	{
+		return "we are in the home";
+	}
+	
+	@GetMapping("/index")
+	public String indexPage()
+	{
+		return "path.html";
+	}
+	
+	@GetMapping(value = {"/"})
+	
+	}
+}

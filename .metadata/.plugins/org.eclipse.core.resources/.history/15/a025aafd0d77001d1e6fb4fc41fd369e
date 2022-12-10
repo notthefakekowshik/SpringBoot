@@ -1,0 +1,5 @@
+package lombokTest;
+
+public class Student {
+	private int id;
+}

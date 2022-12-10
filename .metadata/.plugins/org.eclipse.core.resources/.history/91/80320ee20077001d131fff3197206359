@@ -1,0 +1,14 @@
+package lombokDemo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Student s = new Student(1,"kowshik");
+		System.out.println(s.getName());
+		
+		Student d= new Student();
+		d.setName("elon");
+		
+	}
+
+}

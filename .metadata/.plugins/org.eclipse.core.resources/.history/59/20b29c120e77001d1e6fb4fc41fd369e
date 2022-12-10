@@ -1,0 +1,6 @@
+package lombokTest;
+
+@Data
+public class Student {
+	private int id;
+}

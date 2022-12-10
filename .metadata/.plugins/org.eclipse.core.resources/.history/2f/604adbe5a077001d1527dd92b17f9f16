@@ -1,0 +1,7 @@
+package Repository;
+
+@Repository
+public interface StudentRepo 
+{
+	
+}

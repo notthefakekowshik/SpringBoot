@@ -1,0 +1,15 @@
+package entity;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Data
+public class Student 
+{
+	private int id;
+	private String firstMName;
+	private String 
+	
+}
+ 

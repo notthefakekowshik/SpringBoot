@@ -1,0 +1,15 @@
+package com.springBootTutor.entity;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Data
+@Entity
+public class Department {
+	private long deptId;
+	private String deptName;
+	private String deptAddress;
+	private String deptCode;
+}

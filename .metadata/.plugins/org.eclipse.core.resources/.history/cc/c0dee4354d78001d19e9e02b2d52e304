@@ -1,0 +1,19 @@
+package com.springBootTutor.service;
+
+import org.springframework.stereotype.Service;
+
+import com.springBootTutor.entity.Department;
+import com.springBootTutor.repo.DeptRepo;
+
+@Service
+public class DeptServiceImpl implements DeptService
+{
+	private DeptRepo Dr;
+
+	@Override
+	public Department saveDepartment(Department dept) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

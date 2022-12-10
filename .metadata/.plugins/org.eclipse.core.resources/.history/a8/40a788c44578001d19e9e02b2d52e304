@@ -1,0 +1,5 @@
+package com.springBootTutorControllerPack;
+
+public class HelloController {
+
+}

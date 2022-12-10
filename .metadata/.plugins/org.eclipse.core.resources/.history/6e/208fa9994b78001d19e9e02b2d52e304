@@ -1,0 +1,9 @@
+package com.springBootTutor.repo;
+
+import org.springframework.data.jpa.repository.*;''
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class DeptRepo extends JpaRepository<Department, Long>{
+
+}

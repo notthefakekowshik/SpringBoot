@@ -1,0 +1,11 @@
+package com.springBootTutor.entity;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+public class Department {
+	private long deptId;
+	private String deptName;
+	private String deptAddress;
+	private String deptCode;
+}

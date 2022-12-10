@@ -1,0 +1,5 @@
+package com.springBootTutor.controller;
+
+public class HomeController {
+
+}
