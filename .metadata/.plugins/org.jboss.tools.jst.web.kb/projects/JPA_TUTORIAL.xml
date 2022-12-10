@@ -105,7 +105,6 @@
   <path value="C:/Users/kowshikn/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar"/>
  </paths>
  <validation>
-  <core validator-id="jboss.cdi.core"/>
   <el>
    <linked-el length="51" name="%0" offset="2955" path="%1"/>
    <linked-el length="32" name="%0" offset="3209" path="%1"/>

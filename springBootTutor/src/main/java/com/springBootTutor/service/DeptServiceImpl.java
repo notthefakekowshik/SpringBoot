@@ -17,6 +17,7 @@ public class DeptServiceImpl implements DeptService
 
 	@Override
 	public Department saveDepartment(Department dept) {
+		//dept anedi obj of type department, idi manam postman lo istam as JSON format.
 		// TODO Auto-generated method stub
 		return Dr.save(dept);
 	}
@@ -41,12 +42,14 @@ public class DeptServiceImpl implements DeptService
 
 	@Override
 	public Department updateDepartment(Long deptId, Department dept) {
+		//dept anedi obj of type department, idi manam postman lo istam as JSON format.
 		Department ans = null;
 		try
 		{
 			Department deptFromDb = Dr.findById(deptId).get();
 			
 			deptFromDb.setDeptName(dept.getDeptName()); //ee step important, what does this mean? try to think
+			//aa dept anedi json kada, DB lo unna column values JSON lo ivakpote null ostundi, apdu if condition oakti petkoni cheyali which you've done many a time while doing DSA.
 			
 			ans = Dr.save(deptFromDb);
 		}

@@ -1,6 +1,0 @@
-package lombokDemo;
-
-public class Student {
-	private int id ;
-	private String namel;
-}

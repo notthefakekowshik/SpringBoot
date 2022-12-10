@@ -15,6 +15,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="K:\SpringBootWorkSpace\springbootmvc"/>
 			<item value="K:\SpringBootWorkSpace\springBootTutor"/>
 			<item value="K:\springBootTutor"/>
 			<item value="K:\SpringBootWorkSpace\springBootTuto"/>

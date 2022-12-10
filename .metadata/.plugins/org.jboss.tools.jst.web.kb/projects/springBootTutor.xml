@@ -3,6 +3,7 @@
  <depends-on-projects/>
  <used-by-projects/>
  <paths>
+  <path value="C:/Users/kowshikn/.m2/repository/org/attoparser/attoparser/2.0.6.RELEASE/attoparser-2.0.6.RELEASE.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/spring-beans/6.0.2/spring-beans-6.0.2.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/spring-test/6.0.2/spring-test-6.0.2.jar"/>
@@ -55,8 +56,10 @@
   <path value="C:/Users/kowshikn/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.1/jaxb-runtime-4.0.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.0/spring-boot-starter-jdbc-3.0.0.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.0.RELEASE/thymeleaf-spring6-3.1.0.RELEASE.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar"/>
@@ -78,9 +81,10 @@
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/spring-aop/6.0.2/spring-aop-6.0.2.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.0/spring-boot-starter-json-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/spring-aspects/6.0.2/spring-aspects-6.0.2.jar"/>
-  <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.0/spring-boot-autoconfigure-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.0/spring-boot-autoconfigure-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/eclipse/angus/angus-activation/1.0.0/angus-activation-1.0.0.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.0.0/spring-boot-starter-thymeleaf-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-test/3.0.0/spring-boot-test-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar"/>
@@ -88,6 +92,7 @@
   <path value="C:/Users/kowshikn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.1/jackson-datatype-jsr310-2.14.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-devtools/3.0.0/spring-boot-devtools-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.0.0/spring-boot-starter-test-3.0.0.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar"/>
@@ -100,13 +105,13 @@
   <path value="C:/Users/kowshikn/.m2/repository/io/micrometer/micrometer-commons/1.10.2/micrometer-commons-1.10.2.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar"/>
+  <path value="C:/Users/kowshikn/.m2/repository/org/thymeleaf/thymeleaf/3.1.0.RELEASE/thymeleaf-3.1.0.RELEASE.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/mockito/mockito-junit-jupiter/4.8.1/mockito-junit-jupiter-4.8.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.1/tomcat-embed-core-10.1.1.jar"/>
   <path value="C:/Users/kowshikn/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar"/>
  </paths>
  <validation>
-  <core validator-id="jboss.cdi.core"/>
   <el/>
  </validation>
  <aliases/>

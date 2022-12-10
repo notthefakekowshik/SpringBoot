@@ -1,5 +1,0 @@
-package com.springBootTutor.service;
-
-public class DeptServiceImpl implements DeptService{
-
-}
