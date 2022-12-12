@@ -1,5 +1,6 @@
 package com.springBootTutor.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,6 +16,8 @@ import lombok.NoArgsConstructor;
 public class Department {
 	@Id
 	private long deptId;
+	
+	@Column(unique = true)
 	private String deptName;
 	private String deptAddress;
 	private String deptCode;

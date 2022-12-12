@@ -59,4 +59,12 @@ public class DeptServiceImpl implements DeptService
 		}
 		return ans;
 	}
+
+	@Override
+	public Department fetchDepartmentByName(String deptName) {
+		return Dr.findBydeptName(deptName);
+//		return Dr.findBydeptNameIgnoreCase(deptName);
+	}
+
+	
 }

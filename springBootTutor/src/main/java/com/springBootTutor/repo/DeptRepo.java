@@ -8,4 +8,9 @@ import com.springBootTutor.entity.Department;
 @Repository
 public interface DeptRepo extends JpaRepository<Department, Long>{
 
+	
+	public Department findBydeptName(String deptName); //this is like creating custom methods, JPA lo findNBy name undadu, only findbyid ante column which has primary key
+	//jpa repository ni extends chesinapdu, Long ani undi kada, mana entity class lo oka daniki manam Id annotation istam dani datatype ento ikada @JPA.. lo 2nd arg lo ade data type undali.
+	
+//	public Department findBydeptNameIgnoreCase(String deptName);
 }
