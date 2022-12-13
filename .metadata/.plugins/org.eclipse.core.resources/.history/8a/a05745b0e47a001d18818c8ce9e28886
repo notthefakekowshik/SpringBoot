@@ -1,0 +1,16 @@
+package com.springBootTutor.exceptions;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.springBootTutor.entity.ErrorMessage;
+
+@ControllerAdvice 
+public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler{
+	
+	public ResponseEntity<ErrorMessage> departmentNotFoundException()
+	{
+		
+	}
+
+}

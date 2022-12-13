@@ -2,13 +2,14 @@ package com.springBootTutor.service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springBootTutor.entity.Department;
 import com.springBootTutor.repo.DeptRepo;
-
+import com.springBootTutor.exceptions.*;
 @Service
 public class DeptServiceImpl implements DeptService
 {
@@ -16,7 +17,8 @@ public class DeptServiceImpl implements DeptService
 	private DeptRepo Dr;
 
 	@Override
-	public Department saveDepartment(Department dept) {
+	public Department saveDepartment(Department dept) 
+	{
 		//dept anedi obj of type department, idi manam postman lo istam as JSON format.
 		// TODO Auto-generated method stub
 		return Dr.save(dept);
@@ -29,19 +31,30 @@ public class DeptServiceImpl implements DeptService
 	}
 
 	@Override
-	public Department fetchDepartmentById(Long deptId) {
-		return Dr.findById(deptId).get();
-		
+	public Department fetchDepartmentById(Long deptId) throws DepartmentNotFoundException 
+	{
+		Optional<Department> ansDept = Dr.findById(deptId);
+		if(!ansDept.isPresent())
+		{
+			throw new DepartmentNotFoundException("Department not found!");
+		}
+		return ansDept.get();
 	}
 
 	@Override
-	public void deleteDeptById(Long deptId) {
+	public void deleteDeptById(Long deptId) throws DepartmentNotFoundException 
+	{
+		Optional<Department> ansDept = Dr.findById(deptId);
+		if(!ansDept.isPresent())
+		{
+			throw new DepartmentNotFoundException("Department not found!");
+		}
 		Dr.deleteById(deptId);
-		
 	}
-
+	
 	@Override
-	public Department updateDepartment(Long deptId, Department dept) {
+	public Department updateDepartment(Long deptId, Department dept) 
+	{
 		//dept anedi obj of type department, idi manam postman lo istam as JSON format.
 		Department ans = null;
 		try
@@ -61,10 +74,16 @@ public class DeptServiceImpl implements DeptService
 	}
 
 	@Override
-	public Department fetchDepartmentByName(String deptName) {
-		return Dr.findBydeptName(deptName);
+	public Department fetchDepartmentByName(String deptName) 
+	{
+		return Dr.findBydeptName(deptName); //cant get duplicate values
 //		return Dr.findBydeptNameIgnoreCase(deptName);
 	}
 
-	
+	@Override
+	public Department fetchDepartmentIdByName(String name) 
+	{
+		Department databaseObj = Dr.findBydeptName(name); //cant get duplicate values
+		return databaseObj;
+	}	
 }

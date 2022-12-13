@@ -1,0 +1,84 @@
+package com.springBootTutor.ControllerPackk;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import com.springBootTutor.entity.Department;
+import com.springBootTutor.service.DeptService;
+
+
+@RestController
+public class DeptController 
+{
+	private final Logger LOGGER = LoggerFactory.getLogger(DeptController.class);
+	
+	@Autowired
+	private DeptService Ds; 
+	
+	@PostMapping("/departments")
+	public Department saveDepartment(@RequestBody Department dept)
+	{
+		return Ds.saveDepartment(dept);
+	}
+	
+	@GetMapping("/getDepartment")
+	public List<Department> fetchDeptList()
+	{
+		return Ds.fetchDepartmentList();
+	}
+	
+	@GetMapping("/getDepartment/{id}")
+	public Department getDeptById(@PathVariable("id") Long deptId)
+	{
+		return Ds.fetchDepartmentById(deptId);
+	}
+	
+	@DeleteMapping("/deleteDepartment/{id}")
+	public String deleteDeptById(@PathVariable("id") Long deptId)
+	{
+		LOGGER.info("deleted by id");
+		Ds.deleteDeptById(deptId);
+		return "Dept ID deleted";
+	}
+	
+	@PutMapping("/updateDepartment/{id}")
+	public Department updateDepartment(@PathVariable("id") Long deptId , @RequestBody Department dept)
+	{
+		LOGGER.info("updated");
+		return Ds.updateDepartment(deptId,dept);
+	}
+	
+	@GetMapping("/getDepartmentByName/{name}")
+	public Department fetchDepartmentByName(@PathVariable("name") String deptName)
+	{
+		LOGGER.info("fetched the departments by name");
+		Department ans = Ds.fetchDepartmentByName(deptName); 
+		return ans;
+	}
+	
+	@GetMapping("/getDepartmentIdByName/{name}")
+	public String fetchDepartmentIdByName(@PathVariable("name") String name)
+	{
+		Department ans = Ds.fetchDepartmentIdByName(name);
+		return ans;
+	}
+}
+
+
+//ila different methods ki different urls kakunda, same url kooda ivochu
+ 
+//for example :
+/*
+@GetMapping("/getDepartment/{id}")
+@DeleteMapping("/getDepartment/{id}")
+@PutMapping("/getDepartment/{id}")
+*/

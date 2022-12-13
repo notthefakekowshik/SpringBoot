@@ -1,0 +1,6 @@
+package com.springBootTutor.entity;
+
+public class ErrorMessage 
+{
+
+}

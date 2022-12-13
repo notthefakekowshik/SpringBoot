@@ -1,0 +1,5 @@
+package com.springBootTutor.exceptions;
+
+public class DepartmentNotFoundException {
+
+}

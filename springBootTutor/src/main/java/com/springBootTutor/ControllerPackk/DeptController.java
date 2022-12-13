@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.springBootTutor.entity.Department;
+import com.springBootTutor.exceptions.DepartmentNotFoundException;
 import com.springBootTutor.service.DeptService;
 
 
@@ -37,13 +38,13 @@ public class DeptController
 	}
 	
 	@GetMapping("/getDepartment/{id}")
-	public Department getDeptById(@PathVariable("id") Long deptId)
+	public Department getDeptById(@PathVariable("id") Long deptId) throws DepartmentNotFoundException
 	{
 		return Ds.fetchDepartmentById(deptId);
 	}
 	
 	@DeleteMapping("/deleteDepartment/{id}")
-	public String deleteDeptById(@PathVariable("id") Long deptId)
+	public String deleteDeptById(@PathVariable("id") Long deptId) throws DepartmentNotFoundException
 	{
 		LOGGER.info("deleted by id");
 		Ds.deleteDeptById(deptId);
@@ -51,18 +52,25 @@ public class DeptController
 	}
 	
 	@PutMapping("/updateDepartment/{id}")
-	public Department updateDepartment(@PathVariable("id") Long deptId , @RequestBody Department dept)
+	public Department updateDepartment(@PathVariable("id") Long deptId , @RequestBody Department dept) throws DepartmentNotFoundException
 	{
 		LOGGER.info("updated");
 		return Ds.updateDepartment(deptId,dept);
 	}
 	
 	@GetMapping("/getDepartmentByName/{name}")
-	public Department fetchDepartmentByName(@PathVariable("name") String deptName)
+	public Department fetchDepartmentByName(@PathVariable("name") String deptName) throws DepartmentNotFoundException
 	{
 		LOGGER.info("fetched the departments by name");
 		Department ans = Ds.fetchDepartmentByName(deptName); 
 		return ans;
+	}
+	
+	@GetMapping("/getDepartmentIdByName/{name}")
+	public Long fetchDepartmentIdByName(@PathVariable("name") String name)
+	{
+		Department ans = Ds.fetchDepartmentIdByName(name);
+		return (long) 1.0;
 	}
 }
 
