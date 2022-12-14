@@ -78,6 +78,7 @@ public class DeptController
 //ila different methods ki different urls kakunda, same url kooda ivochu
  
 //for example :
+
 /*
 @GetMapping("/getDepartment/{id}")
 @DeleteMapping("/getDepartment/{id}")
