@@ -9,8 +9,5 @@ import java.util.Optional;
 @org.springframework.stereotype.Repository
 public interface CustomerRepo extends JpaRepository<Customer, Long> {
 
-    Optional<Customer> findByUserNameAndPassWord(String userName, String passWord);
-
-    Optional<Customer> findByUserName(String userName);
 
 }

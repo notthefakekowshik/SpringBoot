@@ -11,10 +11,9 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    private String userName;
-    private String passWord;
+    private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "credentials_id", referencedColumnName = "id")
+    @JoinColumn(name = "customer_credentials_id", referencedColumnName = "id")
     private Credentials credentials;
 }

@@ -10,7 +10,15 @@ public class Credentials {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    private String userName;
+
+    private String passWord;
+
     @OneToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id")
+    @JoinColumn(name = "customer_credentials_id", referencedColumnName = "id")
     private Customer customer;
+
+    @OneToOne
+    @JoinColumn(name = "biller_credentials_id", referencedColumnName = "id")
+    private Biller biller;
 }
